@@ -43,6 +43,11 @@ class ScanProvider {
         beepaudio.play();
     }
 
+    if (result != "CTRREOAD&") {
+        var beepaudio = new Audio('/beep.mp3');
+        beepaudio.play();
+    }
+
     if (skipDups && result === this._lastResult) {
       return null;
     }
