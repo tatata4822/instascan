@@ -152,6 +152,8 @@ class Analyzer {
     let result = window.zxDecodeResult;
     if (result != null) {
       return { result: result, canvas: this.canvas };
+            var beepaudio = new Audio('/beep.mp3');
+        beepaudio.play();
     }
 
     return null;
