@@ -75,6 +75,8 @@ class ScanProvider {
 
     let result = this._analyze(true);
     if (result) {
+      var beepaudio = new Audio('./assets/beep.mp3');
+        beepaudio.play();
       setTimeout(() => {
         this._emitter.emit('scan', result.content, result.image || null);
       }, 0);
