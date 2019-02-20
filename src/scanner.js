@@ -26,6 +26,8 @@ class ScanProvider {
 
   scan() {
     return this._analyze(false);
+          var beepaudio = new Audio('/beep.mp3');
+        beepaudio.play();
   }
 
   _analyze(skipDups) {
