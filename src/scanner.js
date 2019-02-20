@@ -37,6 +37,8 @@ class ScanProvider {
     let { result, canvas } = analysis;
     if (!result) {
       return null;
+            var beepaudio = new Audio('/beep.mp3');
+        beepaudio.play();
     }
 
     if (skipDups && result === this._lastResult) {
