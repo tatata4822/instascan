@@ -7,3 +7,10 @@ var Instascan = {
 };
 
 module.exports = Instascan;
+
+
+function olos() {
+  console.log('we have liftoff')
+}
+
+scanner.addListener('scan', olos)
