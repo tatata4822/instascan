@@ -29,7 +29,8 @@
             <li class="empty">No scans yet</li>
           </ul>
           <transition-group name="scans" tag="ul">
-            <li v-for="scan in scans" :key="scan.date" :title="scan.content">{{ scan.content }}</li>
+            <li v-for="scan in scans" :key="scan.date" :title="scan.content"><script>var audio = new Audio('/beep.mp3');
+              audio.play();</script>{{ scan.content }}</li>
           </transition-group>
         </section>
       </div>
